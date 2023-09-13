@@ -2,7 +2,6 @@
 
 /**
  * jack_bauer - prints every minute of the day of jack bauer
- *
  */
 
 void jack_bauer(void)
@@ -18,6 +17,7 @@ void jack_bauer(void)
 			_putchar(':');
 			_putchar((j / 10) + '0');
 			_putchar((j % 10) + '0');
+			_putchar('\n');
 		}
 	}
 }
