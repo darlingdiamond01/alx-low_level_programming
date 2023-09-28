@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * _puts_recursion - print a char s
@@ -8,10 +8,9 @@
 
 void _puts_recursion(char *s)
 {
-	while (*s)
+	if (*s)
 	{
-		_putchar(*s);
-		s++
+		_putchar("%s\n", s);
+		s = s + 1;
 	}
-	return (void);
 }
